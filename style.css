@@ -1,0 +1,90 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    
+}
+i{
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    color: #fff;
+    float: left;
+    cursor: pointer;
+}
+.navbar{
+    background-color: #3b5998;
+    height: 63px;
+    overflow: hidden;
+ }
+.navbar a{
+    float: left;
+    color:#f2f2f2;
+    text-align: center;
+    text-decoration: none;   
+    font-size: 17px;
+    padding: 14px 16px;
+    
+}
+.navbar a:hover{
+    color:#000;
+    background: #ddd;
+ 
+}
+.navbar ul{
+    margin: 8px 0 0 0 ;
+    list-style: none;
+}
+
+.side-nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #111;
+    opacity: 0.9;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: 0.7s;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 22px;
+    display: block;
+    transition: 0.3s;
+}
+.side-nav a:hover{
+    color:#fff;
+}
+.side-nav .close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    color: red;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main{
+    transition: margin-left 0.7s;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media(max-width:568px){
+    .navbar-nav{
+        display: none;
+    }
+}
+
+/*
+@media(min-width:568px){
+    .navbar span.open{
+        display: none;
+    }
+}
+*/

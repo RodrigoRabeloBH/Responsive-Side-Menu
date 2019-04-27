@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Side Menu</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="open">
+                <i class="fas fa-bars fa-2x" onclick="openSideMenu()"></i>
+            </span>                  
+            <ul class="navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="side-nav" id="side-menu">
+        <a href="#" class="close" onclick="closeSideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="main">
+        <h1>Responsive Side Menu</h1>
+    </div>
+    <script>
+        function openSideMenu(){
+            document.querySelector('#side-menu').style.width ='250px'
+            document.getElementById('main').style.marginLeft ='250px'
+        }
+        function closeSideMenu(){
+            document.querySelector('#side-menu').style.width ='0px'
+            document.querySelector('#main').style.marginLeft ='0px'
+        }
+    </script>
+</body>
+</html>
